@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Unittest for the max_integer module
+"""
+max_integer([..]). Unittest
 """
 
 
 import unittest
 max_integer = __import__('6-max_integer').max_integer
+
 
 class TestMaxInteger(unittest.TestCase):
     """ Unittest cases fir max_integer function """
