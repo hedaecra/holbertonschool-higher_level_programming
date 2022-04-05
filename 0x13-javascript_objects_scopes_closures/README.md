@@ -1,0 +1,1 @@
+# Hello JavaScript - Objects, Scopes and Closures
