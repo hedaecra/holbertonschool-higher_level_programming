@@ -1,12 +1,13 @@
 #!/usr/bin/node
-const square = require('./4-rectangle');
-
-class Square extends square {
+const SquareC = require('./5-square');
+class Square extends SquareC {
   charPrint (c) {
     if (c === undefined) {
-      console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
+      this.print();
     } else {
-      console.log((c.repeat(this.width) + '\n').repeat(this.height - 1) + c.repeat(this.width));
+      for (let i = 0; i < this.height; i++) {
+        console.log(c.repeat(this.width));
+      }
     }
   }
 }
